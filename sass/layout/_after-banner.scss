@@ -1,0 +1,42 @@
+.after-banner {
+  padding: 94px 0;
+}
+
+.after-banner-items {
+  width: calc((100% - (3 * 30px)) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.after-banner-list {
+  display: flex;
+}
+
+.section-item {
+  color: $black-color;
+  @include font();
+
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: $text-color;
+  @include font($fw: 400, $lh: 1.71);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info-icons-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}

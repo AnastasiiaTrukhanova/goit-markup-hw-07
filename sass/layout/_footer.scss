@@ -1,0 +1,129 @@
+.footer {
+  background-color: $banner-background-color;
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container-address {
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  margin-right: 70px;
+  width: 231px;
+}
+
+.footer-adress {
+  color: $primary-white-color;
+  font-style: normal;
+  @include font($fw: 500, $lh: 1.71);
+
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  color: $footer-link-color;
+  font-style: normal;
+  @include font($fw: 500, $lh: 1.71);
+
+  margin-top: 0;
+  margin-bottom: 9px;
+  transition: color $time-hover $timing-function;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+
+  & .social-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  & .social-icon {
+    fill: $primary-white-color;
+  }
+  & .social-link:hover,
+  & .social-link:focus {
+    background: $accent-color;
+  }
+}
+
+.social-title {
+  @include font();
+  color: $primary-white-color;
+
+  text-transform: uppercase;
+}
+.social-network-list {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.social-network-items {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-title {
+  @include font();
+  color: $primary-white-color;
+
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.subscribe-form-line {
+  width: 358px;
+  height: 50px;
+  background-color: $banner-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  @include font($fs: 16px, $fw: 400, $lh: 1.25);
+  color: $primary-white-color;
+
+  &::placeholder {
+    color: $footer-link-color;
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  background-color: $accent-color;
+  color: $primary-white-color;
+  box-shadow: 0px 4px 4px rgba(143, 136, 136, 0.15);
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+
+  transition: background-color $time-hover $timing-function;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.button-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

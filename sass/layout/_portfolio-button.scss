@@ -1,0 +1,31 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-button {
+  background-color: $team-background-color;
+  @include font($fs: 16px, $fw: 500, $lh: 1.6);
+
+  padding: 6px 22px;
+  transition: color $time-hover $timing-function,
+    background-color $time-hover $timing-function;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    cursor: pointer;
+  }
+}
